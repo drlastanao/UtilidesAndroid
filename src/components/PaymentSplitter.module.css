@@ -94,3 +94,27 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .resultContainer {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .resultAmount {
+        font-size: 2.25rem;
+    }
+
+    .currency {
+        font-size: 1.25rem;
+    }
+}

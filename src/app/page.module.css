@@ -164,12 +164,14 @@
 
 @media (max-width: 600px) {
   .page {
-    padding: 32px;
+    padding: 16px;
     padding-bottom: 80px;
+    gap: 32px;
   }
 
   .main {
     align-items: center;
+    width: 100%;
   }
 
   .main ol {
@@ -177,13 +179,20 @@
   }
 
   .ctas {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1rem;
   }
 
   .ctas a {
     font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
+    height: auto;
+    padding: 0;
+  }
+
+  .pary {
+    width: 100%;
+    padding: 1.25rem;
   }
 
   .footer {
