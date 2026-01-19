@@ -1,0 +1,29 @@
+.page {
+    min-height: 100vh;
+    padding: 2rem;
+    background: var(--background);
+    font-family: var(--font-geist-sans);
+}
+
+.header {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.backButton {
+    color: var(--foreground);
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.backButton:hover {
+    opacity: 1;
+}
+
+.main {
+    width: 100%;
+}

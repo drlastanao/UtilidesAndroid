@@ -22,6 +22,16 @@ export default function Home() {
               <p>Organiza tu día con este simple gestor de tareas.</p>
             </div>
           </a>
+
+          <a
+            className={styles.pary}
+            href="/split"
+          >
+            <div className={styles.cardContent}>
+              <h3>Repartidor de Pagos <span>-&gt;</span></h3>
+              <p>Divide la cuenta entre amigos fácilmente.</p>
+            </div>
+          </a>
         </div>
       </main>
     </div>
