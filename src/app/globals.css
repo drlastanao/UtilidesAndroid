@@ -1,12 +1,44 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Shared Theme Variables (Light Mode Default) */
+  --primary: #0070f3;
+  --primary-hover: #0051a2;
+  --primary-foreground: #ffffff;
+  
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.1);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  --input-bg: #ffffff;
+  --input-border: rgba(0, 0, 0, 0.2);
+  --input-text: #171717;
+  
+  --muted: rgba(0, 0, 0, 0.05);
+  --muted-foreground: rgba(0, 0, 0, 0.6);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    
+    /* Shared Theme Variables (Dark Mode) */
+    --primary: #0070f3;
+    --primary-hover: #0051a2;
+    --primary-foreground: #ffffff;
+
+    --card-bg: #1a1a1a;
+    --card-border: rgba(255, 255, 255, 0.1);
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --input-border: rgba(255, 255, 255, 0.1);
+    --input-text: #ffffff;
+
+    --muted: rgba(255, 255, 255, 0.05);
+    --muted-foreground: rgba(255, 255, 255, 0.6);
   }
 }
 

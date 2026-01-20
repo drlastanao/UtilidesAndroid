@@ -2,11 +2,10 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
-    background: var(--background);
+    background: var(--card-bg);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--card-border);
 }
 
 .title {
@@ -14,10 +13,7 @@
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
-    background: linear-gradient(to right, #fff, #aaa);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--foreground);
 }
 
 .inputGroup {
@@ -30,25 +26,24 @@
     flex: 1;
     padding: 1rem;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--foreground);
+    border: 1px solid var(--input-border);
+    background: var(--input-bg);
+    color: var(--input-text);
     font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 .input:focus {
     outline: none;
-    border-color: #fff;
-    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
 }
 
 .addButton {
     padding: 0 2rem;
     border-radius: 12px;
     border: none;
-    background: #fff;
-    color: #000;
+    background: var(--primary);
+    color: var(--primary-foreground);
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.2s, opacity 0.2s;
@@ -56,6 +51,7 @@
 
 .addButton:hover {
     opacity: 0.9;
+    background: var(--primary-hover);
     transform: scale(1.02);
 }
 
@@ -73,15 +69,15 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--muted);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
     transition: all 0.3s ease;
     animation: slideIn 0.3s ease-out;
 }
 
 .taskItem:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--card-border);
     transform: translateX(4px);
 }
 
@@ -89,7 +85,7 @@
     appearance: none;
     width: 24px;
     height: 24px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--card-border);
     border-radius: 6px;
     cursor: pointer;
     position: relative;
@@ -97,14 +93,14 @@
 }
 
 .checkbox:checked {
-    background: #fff;
-    border-color: #fff;
+    background: var(--primary);
+    border-color: var(--primary);
 }
 
 .checkbox:checked::after {
     content: '✓';
     position: absolute;
-    color: #000;
+    color: var(--primary-foreground);
     font-size: 16px;
     top: 50%;
     left: 50%;
@@ -115,18 +111,20 @@
     flex: 1;
     font-size: 1.1rem;
     transition: all 0.3s;
+    color: var(--foreground);
 }
 
 .completed {
     text-decoration: line-through;
     opacity: 0.5;
+    color: var(--muted-foreground);
 }
 
 .deleteButton {
     padding: 0.5rem;
     background: transparent;
     border: none;
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--muted-foreground);
     cursor: pointer;
     border-radius: 8px;
     transition: all 0.2s;
