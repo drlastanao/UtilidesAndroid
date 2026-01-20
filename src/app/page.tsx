@@ -32,6 +32,16 @@ export default function Home() {
               <p>Divide la cuenta entre amigos fácilmente.</p>
             </div>
           </a>
+
+          <a
+            className={styles.pary}
+            href="/password"
+          >
+            <div className={styles.cardContent}>
+              <h3>Generador de Contraseñas <span>-&gt;</span></h3>
+              <p>Crea contraseñas seguras y personalizadas.</p>
+            </div>
+          </a>
         </div>
       </main>
     </div>
