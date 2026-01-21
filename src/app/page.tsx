@@ -42,6 +42,16 @@ export default function Home() {
               <p>Crea contraseñas seguras y personalizadas.</p>
             </div>
           </a>
+
+          <a
+            className={styles.pary}
+            href="/hangman"
+          >
+            <div className={styles.cardContent}>
+              <h3>Juego del Ahorcado <span>-&gt;</span></h3>
+              <p>Adivina la palabra oculta antes de que sea tarde.</p>
+            </div>
+          </a>
         </div>
       </main>
     </div>
