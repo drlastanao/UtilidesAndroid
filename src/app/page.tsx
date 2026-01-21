@@ -52,6 +52,16 @@ export default function Home() {
               <p>Adivina la palabra oculta antes de que sea tarde.</p>
             </div>
           </a>
+
+          <a
+            className={styles.pary}
+            href="/impostor"
+          >
+            <div className={styles.cardContent}>
+              <h3>Juego del Impostor <span>-&gt;</span></h3>
+              <p>Busca al impostor o engaña a todos para ganar.</p>
+            </div>
+          </a>
         </div>
       </main>
     </div>
