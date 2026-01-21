@@ -62,6 +62,16 @@ export default function Home() {
               <p>Busca al impostor o engaña a todos para ganar.</p>
             </div>
           </a>
+
+          <a
+            className={styles.pary}
+            href="/reminders"
+          >
+            <div className={styles.cardContent}>
+              <h3>Recordatorio de Citas <span>-&gt;</span></h3>
+              <p>Gestiona tus citas y tareas con un calendario.</p>
+            </div>
+          </a>
         </div>
       </main>
     </div>
